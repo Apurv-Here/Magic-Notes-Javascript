@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/input.css">
+    <link rel="stylesheet" href="/CSS/Navbar.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <!-- creating a navbar -->
-    <nav class="bg-black text-white h-16">
-        <div class="flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="mx-4 invisible  ">Magic Notes</div>
-                <div class="mx-2">Home</div>
-            </div>
-            <div class="flex items-center">
-                <div><input type="text" placeholder="Search Here.."></div>
-                <button>Search</button>
+    <nav class="bg-black text-white  h-16  ">
+        <div class="mx-3 md:mx-6 lg:mx-8">
+            <div class="flex justify-between items-center" id="divForMagicNote">
+                <div class="flex items-center" id="magic1">
+                    <div class="ml-2 mr-4 text-2xl font-bold flex items-center justify-center " id="MagicNotes">
+                        MagicNotes</div>
+                    <a href="">
+                        <div class="mx-2 text-lg font-semibold flex items-center" id="Home">Home</div>
+                    </a>
+                </div>
+                <div class="flex items-center mr-2 md:mr-8 lg:mr-16  text-black ">
+                    <div class="h-7   items-center invisible hidden" id="searchBar"><input
+                            class="p-2 rounded-md h-8 w-[65vw]" id="searchID" type="text" placeholder="Search Here.."></div>
+                    <div class="pt-3">
+                        <button class="mx-1 mb-3 mt-1" id="searchBtn"><img class=" h-8 w-8 rounded-full"
+                                src="/Images/darkSearchIcon.png" alt="a"></button>
+                    </div>
+                    <!-- <button class="text-white border-2 border-white mx-1 invisible hidden" id="cancelBtn">cancel</button> -->
+                </div>
             </div>
         </div>
 
-    
+
     </nav>
-    
+
+
+    <script src="/Javascript/Navbar.js"></script>
 </body>
+
 </html>

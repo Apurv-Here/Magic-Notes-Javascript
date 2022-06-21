@@ -1,0 +1,31 @@
+.showDiv {
+    display: flex;
+    visibility: visible;
+}
+
+.hideDiv {
+    display: none;
+    visibility: hidden;
+}
+
+.center {
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .showDiv {
+        display: flex;
+        visibility: visible;
+    }
+    
+    .hideDiv {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .center {
+        justify-content: center;
+    }
+  }
